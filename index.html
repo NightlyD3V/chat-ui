@@ -10,23 +10,28 @@
   <body>
     <div id="chat-container">
       <div id="toolbar-container">
-        <div style="display: flex">
+        <div style="display: flex; align-items: center">
           <h1 style="color:white; margin-right: 5px">💀</h1>
-          <div style="background-color: lightgreen; width: 10px; height: 10px; border-radius: 100%;"></div>
+          <div id="server-status"></div>
         </div>
+        <h1 style="color: white"> [1] runner(s) </h1>
         <div id="toolbar-buttons">
-          <button class="tool-button">—</button>
-          <button class="tool-button">☐</button>
           <button class="tool-button">🗷</button>
         </div>
       </div>
       <div id="msg-container">
-        <p style="padding: 15px;">Hey, this is a random message!</p>
+        <p style="padding: 20px; color: white; line-height: 1.6;">
+          Hey!, thanks for stopping by. 
+          <br>
+          This page is currently under heavy construction but check back soon for an unforgetable multiplayer experience :) 
+          <br>
+          ~ NightlyD3V
+        </p>
       </div>
       <form id="msg-form">
-        <input id="msg-input" placeholder=">_ message"></input>
-        <button style="width: 25%; font-size: 2rem; background-color: #476EAE; border: 1px solid black;">
-          <img src="public/send-icon.svg" style="margin-right: 5px; width: 25px; height: auto;"></img> 
+        <input id="msg-input" placeholder="message"></input>
+        <button style="width: 15%; background-color: #8A2BE2; color: white; border: 1px solid black;">
+          send 
         </button>
       </form>
     </div>
