@@ -15,5 +15,5 @@ const button = document.getElementById("exit-button");
 
 button.addEventListener("click", () => {
   console.log("You clicked the exit button!");
-  window.parent.postMessage("buttonClicked", "*");
+  window.parent.postMessage("exit-button_clicked", "https://bitshift.neocities.org/");
 });
