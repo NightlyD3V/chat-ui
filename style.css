@@ -48,14 +48,31 @@ table {
 }
 
 #chat-container {
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #F6FF99;
 }
 
 #toolbar-container {
-  background-color: grey;
+  background-color: #48B3AF;
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.tool-button {
+  border: none;
+  background: none;
+  color: white;
+}
+
+#msg-container {
+  background-color: #A7E399;
+  width: 90%;
+  height: 20%;
+  margin: 0 auto;
+  transform: trasnlateX(-50%);
 }
 
 #msg-form {
@@ -69,5 +86,7 @@ table {
   width: 100%;
   padding: 15px;
 }
+
+
 
 

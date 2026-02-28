@@ -10,14 +10,24 @@
   <body>
     <div id="chat-container">
       <div id="toolbar-container">
-        <h1 style="text-align: center; color: white">[BitMsg]</h1>
-        <div id="toolbar-buttons">
-          <button>X</button>
+        <div style="display: flex">
+          <h1 style="color:white; margin-right: 5px">💀</h1>
+          <div style="background-color: lightgreen; width: 10px; height: 10px; border-radius: 100%;"></div>
         </div>
+        <div id="toolbar-buttons">
+          <button class="tool-button">—</button>
+          <button class="tool-button">☐</button>
+          <button class="tool-button">🗷</button>
+        </div>
+      </div>
+      <div id="msg-container">
+        <p style="padding: 15px;">Hey, this is a random message!</p>
       </div>
       <form id="msg-form">
         <input id="msg-input" placeholder=">_ message"></input>
-        <button>SEND</button>
+        <button style="width: 25%; font-size: 2rem; background-color: #476EAE; border: 1px solid black;">
+          <img src="public/send-icon.svg" style="margin-right: 5px; width: 25px; height: auto;"></img> 
+        </button>
       </form>
     </div>
     <script src="index.js" type="text/javascript"></script>
