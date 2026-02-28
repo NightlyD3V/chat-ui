@@ -2,7 +2,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS --> 
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <!-- SOCKET.IO --> 
     <script src="https://cdn.socket.io/4.8.3/socket.io.min.js" integrity="sha384-kzavj5fiMwLKzzD1f8S7TeoVIEi7uKHvbTA3ueZkrzYq75pNQUiUi6Dy98Q3fxb0" crossorigin="anonymous"></script>
@@ -14,13 +15,13 @@
           <h1 style="color:white; margin-right: 5px">💀</h1>
           <div id="server-status"></div>
         </div>
-        <h1 style="color: white"> [1] runner(s) </h1>
+        <h1 id="active-users"> [1] runner(s) </h1>
         <div id="toolbar-buttons">
           <button id="exit-button" class="tool-button">🗷</button>
         </div>
       </div>
       <div id="msg-container">
-        <p style="padding: 20px; color: white; line-height: 1.6;">
+        <p class="msg">
           Hey!, thanks for stopping by. 
           <br>
           This page is currently under heavy construction but check back soon for an unforgetable multiplayer experience :) 
@@ -31,7 +32,7 @@
       <form id="msg-form">
         <input id="msg-input" placeholder="message"></input>
         <button id="submit">
-          send 
+          senD 
         </button>
       </form>
     </div>
