@@ -51,6 +51,10 @@ table {
   width: 100%;
   height: 100%;
   background-color: #1D2330;
+  border-radius: 20px;
+  box-shadow:
+    inset 0 0 80px rgba(0,0,0,0.8),
+    0 0 40px rgba(0,255,156,0.2);
 }
 
 #toolbar-container {
@@ -67,6 +71,9 @@ table {
   color: white;
   transform: scale(2);
   transform-origin: center;
+}
+.tool-button:hover {
+  color: #1D2330;
 }
 
 #server-status {
@@ -105,6 +112,15 @@ table {
   border: 1px solid black;
 }
 
+#submit {
+  width: 15%; 
+  background-color: #8A2BE2; 
+  color: white; 
+  border: 1px solid black;
+}
 
+#submit:hover {
+  background-color: #B026FF;
+}
 
 
