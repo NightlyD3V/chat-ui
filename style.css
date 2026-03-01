@@ -111,6 +111,7 @@ table {
   margin: 0 auto;
   transform: trasnlateX(-50%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow-y: auto;
 }
 
 .msg {
