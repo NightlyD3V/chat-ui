@@ -128,11 +128,7 @@ table {
 }
 
 #messages {
-  max-width: 100%
-  border-radius: 10px 10px 10px 10px;
-  padding: 20px;
-  background-color: background-color: #1E90FF;
-  margin-bottom: 5px;
+  width: 100%;
 }
   
 
