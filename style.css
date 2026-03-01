@@ -118,8 +118,7 @@ table {
   overflow-y: auto;
 }
 
-.msg {
-  padding: 20px; 
+.msg { 
   color: white; 
   line-height: 1.6; 
   font-family: 'Stifly', sans-serif;
