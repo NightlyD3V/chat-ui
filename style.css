@@ -105,24 +105,39 @@ table {
 }
 
 #msg-container {
-  background-color: #1E90FF;
-  border-radius: 10px 10px 10px 10px;
   width: 90%;
-  margin-bottom: 10px;
-  padding: 20px;
+  max-height: 80%;
   color: white;
   line-height: 1.6;
   font-family: 'Stifly', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: trasnlateX(-50%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow-y: auto;
 }
 
-.msg { 
-  color: white; 
-  line-height: 1.6; 
-  font-family: 'Stifly', sans-serif;
+.msg {
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  background-color: #1E90FF;
+  margin-bottom: 5px;
+  width: 90%;
+  transform: trasnlateX(-50%);
 }
+
+#messages {
+  border-radius: 10px 10px 10px 10px;
+  padding: 20px;
+  background-color: background-color: #1E90FF;
+  margin-bottom: 5px;
+  width: 90%;
+  transform: trasnlateX(-50%);
+}
+  
 
 #msg-form {
   display: flex;
