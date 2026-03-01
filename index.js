@@ -22,6 +22,9 @@ socket.on('chat message', (msg) => {
   msgDiv.textContent = msg;
   msgDiv.style.padding = '5px';
   msgDiv.style.borderBottom = '1px solid #eee';
+  msgDiv.style.background = '#1E90FF';
+  msgDiv.style.marginBottom = '5px';
+  msgDiv.style.borderRadius = '10px, 10px, 10px, 10px';
   messagesDiv.appendChild(msgDiv);
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
 });
