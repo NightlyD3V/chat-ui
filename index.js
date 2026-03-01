@@ -2,9 +2,10 @@
 const socket = io("https://chat-server-3bcx.onrender.com");
 
 // HANDLE MESSAGES
-let messages = [];
 const sendBtn = document.getElementById('submit');
 const input = document.getElementById('msg-input');
+const messagesDiv = document.getElementById('messages');
+
 // SEND
 sendBtn.addEventListener('click', () => {
   const msg = input.value.trim();
@@ -14,14 +15,13 @@ sendBtn.addEventListener('click', () => {
   }
 });
 //RECIEVE
-const messagesDiv = document.getElementById('messages');
 socket.on('chat message', (msg) => {
   const msgDiv = document.createElement('div');
   msgDiv.textContent = msg;
   msgDiv.style.padding = '5px';
   msgDiv.style.borderBottom = '1px solid #eee';
   messagesDiv.appendChild(msgDiv);
-  chatPopup.scrollTop = chatPopup.scrollHeight;
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
 });
 
 // HANDLE EXIT (CROSS-ORIGIN)
