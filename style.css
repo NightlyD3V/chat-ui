@@ -108,7 +108,11 @@ table {
   background-color: #1E90FF;
   border-radius: 10px 10px 10px 10px;
   width: 90%;
-  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+  line-height: 1.6;
+  font-family: 'Stifly', sans-serif;
   transform: trasnlateX(-50%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   overflow-y: auto;
