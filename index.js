@@ -12,7 +12,8 @@ sendBtn.addEventListener('click', () => {
     input.value = '';
   }
 });
-//RECIEVE 
+//RECIEVE
+const messagesDiv = document.getElementById('messages');
 socket.on('chat message', (msg) => {
   const msgDiv = document.createElement('div');
   msgDiv.textContent = msg;
