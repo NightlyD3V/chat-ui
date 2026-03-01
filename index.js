@@ -7,13 +7,13 @@ const input = document.getElementById('msg-input');
 const messagesDiv = document.getElementById('messages');
 
 // SEND
-sendBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+const form = document.getElementById('msg-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // stops form submission / page reload
   const msg = input.value.trim();
-  if (msg) {
-    socket.emit('chat message', msg); 
-    input.value = '';
-  }
+  if (!msg) return;
+  socket.emit('chat message', msg);
+  input.value = '';
 });
 //RECIEVE
 socket.on('chat message', (msg) => {
