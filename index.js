@@ -8,7 +8,7 @@ const sendBtn = document.getElementById('submit');
 sendBtn.addEventListener('click', () => {
   const msg = input.value.trim();
   if (msg) {
-    socet.emit('chat message', msg); 
+    socket.emit('chat message', msg); 
     input.value = '';
   }
 });
