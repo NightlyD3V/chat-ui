@@ -7,7 +7,8 @@ const input = document.getElementById('msg-input');
 const messagesDiv = document.getElementById('messages');
 
 // SEND
-sendBtn.addEventListener('click', () => {
+sendBtn.addEventListener('click', (e) => {
+  e.preventDefault();
   const msg = input.value.trim();
   if (msg) {
     socket.emit('chat message', msg); 
