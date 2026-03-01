@@ -1,6 +1,12 @@
 // CHAT
 const socket = io("https://chat-server-3bcx.onrender.com");
 
+// USER COUNT 
+const onlineDisplay = document.getElementById('active-users');
+socket.on("userCount", (count) => {
+  onlineDisplay.textContent = `[${count}] runner(s)`;
+});
+
 // HANDLE MESSAGES
 const sendBtn = document.getElementById('submit');
 const form = document.getElementById('msg-form');
@@ -26,7 +32,7 @@ sendBtn.addEventListener('click', (e) => {
   }
 });
 
-//RECIEVE
+// RECIEVE
 socket.on('chat message', (msg) => {
   const msgDiv = document.createElement('div');
   msgDiv.textContent = msg;
