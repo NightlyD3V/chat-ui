@@ -4,6 +4,7 @@ const socket = io("https://chat-server-3bcx.onrender.com");
 // HANDLE MESSAGES
 let messages = [];
 const sendBtn = document.getElementById('submit');
+const input = document.getElementById('msg-input');
 // SEND
 sendBtn.addEventListener('click', () => {
   const msg = input.value.trim();
