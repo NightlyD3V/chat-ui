@@ -108,35 +108,31 @@ table {
   max-height: 80%;
   color: white;
   line-height: 1.6;
-  font-family: 'Stifly', sans-serif;
-  margin: 0 auto;
+  font-family: 'Stifly', sans-serif; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: trasnlateX(-50%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
 .msg {
-  max-width: 100%
+  max-width: 80%;
   position: relative;
   border-radius: 10px 10px 10px 10px;
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
   background-color: #1E90FF;
   margin-bottom: 5px;
-  width: 90%;
-  transform: trasnlateX(-50%);
 }
 
 #messages {
-  max-width: 100%
+  max-width: 80%
   border-radius: 10px 10px 10px 10px;
   padding: 20px;
   background-color: background-color: #1E90FF;
   margin-bottom: 5px;
-  width: 90%;
-  transform: trasnlateX(-50%);
 }
   
 
