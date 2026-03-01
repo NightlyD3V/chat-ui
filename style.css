@@ -65,7 +65,11 @@ table {
 }
 
 #toolbar-container {
-  background-color: #8A2BE2;
+  background: linear-gradient(to right, 
+  #1E90FF 0%,       
+  #8A2BE2 40%,      
+  #8A2BE2 70%,      
+  #8A2BE2 100%);   
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -101,8 +105,8 @@ table {
 }
 
 #msg-container {
-  background-color: #B026FF;
-  border-radius: 20px 20px 20px 5px;
+  background-color: #1E90FF;
+  border-radius: 10px 10px 10px 10px;
   width: 90%;
   margin: 0 auto;
   transform: trasnlateX(-50%);
@@ -140,7 +144,7 @@ table {
 
 #submit {
   width: 15%; 
-  background-color: #8A2BE2; 
+  background-color: #1E90FF; 
   color: white; 
   border: 1px solid black;
   font-family: 'Stifly', sans-serif;
