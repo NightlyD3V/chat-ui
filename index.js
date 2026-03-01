@@ -9,11 +9,12 @@ const messagesDiv = document.getElementById('messages');
 // SEND
 const form = document.getElementById('msg-form');
 form.addEventListener('submit', (e) => {
-  e.preventDefault(); // stops form submission / page reload
+  e.preventDefault(); 
   const msg = input.value.trim();
-  if (!msg) return;
-  socket.emit('chat message', msg);
-  input.value = '';
+  if (msg) {
+    socket.emit('chat message', msg);
+    input.value = '';
+  }
 });
 //RECIEVE
 socket.on('chat message', (msg) => {
