@@ -46,7 +46,12 @@ socket.on('chat message', (msg) => {
     msgDiv.classList.remove('shake');
   }, { once: true });
   messagesDiv.appendChild(msgDiv);
-  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  requestAnimationFrame(() => {
+    messagesDiv.scrollTo({
+      top: messagesDiv.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
 });
 
 // HANDLE EXIT (CROSS-ORIGIN)
