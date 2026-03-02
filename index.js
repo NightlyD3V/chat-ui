@@ -41,6 +41,10 @@ socket.on('chat message', (msg) => {
   msgDiv.style.background = '#1E90FF';
   msgDiv.style.marginBottom = '10px';
   msgDiv.style.borderRadius = '10px 10px 10px 10px';
+  msgDiv.classList.add('shake');
+  msgDiv.addEventListener('animationend', () => {
+    msgDiv.classList.remove('shake');
+  }, { once: true });
   messagesDiv.appendChild(msgDiv);
   messagesDiv.scrollTop = messagesDiv.scrollHeight;
 });
