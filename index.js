@@ -10,7 +10,7 @@ socket.on("state", (data) => {
 });
 
 socket.on("userCount",(count) => {
-  onlineDisplay.textContent = `[#{count}] runner(s)`;
+  onlineDisplay.textContent = `[${count}] runner(s)`;
 }
 
 // HANDLE MESSAGES
