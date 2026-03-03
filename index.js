@@ -2,9 +2,10 @@
 const socket = io("https://chat-server-3bcx.onrender.com", { query: {type: "chat"} });
 
 // USER COUNT 
-const onlineDisplay = document.getElementById('active-users');
-socket.on("userCount", (count) => {
-  onlineDisplay.textContent = `[${count}] runner(s)`;
+socket.emit("requestState"); // Ask server for latest data
+
+socket.on("state", (data) => {
+  onlineDisplay.textContent = `[${data.count}] runner(s)`;
 });
 
 // HANDLE MESSAGES
