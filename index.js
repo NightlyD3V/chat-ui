@@ -4,7 +4,7 @@ const socket = io("https://chat-server-3bcx.onrender.com");
 // USER COUNT 
 const onlineDisplay = document.getElementById('active-users');
 socket.on("userCount", (count) => {
-  onlineDisplay.textContent = `[${Math.floor(count / 2)}] runner(s)`;
+  onlineDisplay.textContent = `[${count}] runner(s)`;
 });
 
 // HANDLE MESSAGES
