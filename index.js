@@ -2,6 +2,7 @@
 const socket = io("https://chat-server-3bcx.onrender.com", { query: {type: "chat"} });
 
 // USER COUNT 
+const onlineDisplay = document.getElementById('active-users');
 socket.emit("requestState"); // Ask server for latest data
 
 socket.on("state", (data) => {
