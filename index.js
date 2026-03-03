@@ -1,5 +1,5 @@
 // CHAT
-const socket = io("https://chat-server-3bcx.onrender.com", { query: {type: "game"} });
+const socket = io("https://chat-server-3bcx.onrender.com", { query: {type: "chat"} });
 
 // USER COUNT 
 const onlineDisplay = document.getElementById('active-users');
