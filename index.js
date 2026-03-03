@@ -9,6 +9,10 @@ socket.on("state", (data) => {
   onlineDisplay.textContent = `[${data.count}] runner(s)`;
 });
 
+socket.on("userCount",(count) => {
+  onlineDisplay.textContent = `[#{count}] runner(s)`;
+}
+
 // HANDLE MESSAGES
 const sendBtn = document.getElementById('submit');
 const form = document.getElementById('msg-form');
